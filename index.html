@@ -16,9 +16,10 @@
   </head>
 
   <body>
+    <div class="weather-app-wrapper">
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
+    <div class="weather-app">
+         <form class="search-form" id="search-form">
           <div class="row">
             <div class="col-6">
               <input
@@ -45,7 +46,7 @@
                 Current
               </button>
             </div>
-          </div>
+        </div>
         </form>
         <h1 id="city"></h1>
         <ul>
@@ -54,7 +55,7 @@
         </ul>
         <div class="row">
           <div class="col-6">
-            <div class="clearfix">
+            <div class="clearfix weather-temperature">
               <img
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               alt="Cloudy icon"
@@ -63,7 +64,8 @@
               <div class="float-left">
                 <span class="temperature" id="temperature"></span
                 ><span class="units">
-                <a href="#" id="celsius-link">°C</a> |
+                  <strong>
+                <a href="#" id="celsius-link">°C</a></strong> |
                 <a href="#" id="fahrenheit-link">°F</a> 
               </span>
               </div>
@@ -71,6 +73,7 @@
           </div>
           <div class="col-6">
             <ul>
+              <li>Precipitation <span id="Precipitation"></span>%</li>
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span> km/h</li>
             </ul>
@@ -78,13 +81,17 @@
         </div>
       </div>
     </div>
-    <script src="src/index.js"></script>
-  </body>
-  <smal>
+   
+  <small>
   <a
     href="https://github.com/Casto2710/Vanilla-Weather-App"
-    terget="blank"
+    terget="_blank"
     >open-source code</a>
     by Jolanta Studencka
-  </smal>
-  </html>
+  </small>
+</div>
+</div>
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>
